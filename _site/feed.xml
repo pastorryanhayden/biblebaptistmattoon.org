@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bible Baptist Church of Mattoon IL</title>
+    <description>Sitesfor.church makes affordable church websites built for the needs of the 90% of churches with less than 200 members.   You won't find a professional solution that is more affordable or easier to use.  We also are deliberate about giving jobs to Bible college students and other aspiring pastors.
+</description>
+    <link>http://biblebaptistmattoon.org//</link>
+    <atom:link href="http://biblebaptistmattoon.org//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 31 Aug 2016 09:01:29 -0500</pubDate>
+    <lastBuildDate>Wed, 31 Aug 2016 09:01:29 -0500</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Sitesfor.Church 101</title>
+        <description>&lt;h1 id=&quot;the-learning-curve-website-101&quot;&gt;The Learning Curve: Website 101&lt;/h1&gt;
+
+&lt;p&gt;At Sitesfor.church, we are dedicated to giving you the easiest to update church website you could possibly have.  But every website is going to have some learning curve.  We’ve learned over the years that often, in an attempt to make websites easier for nontechnical people, you can actually make things more complicated.&lt;/p&gt;
+
+&lt;p&gt;We think we’ve found the best mix of ease of use and necessary complexity.  Many of our clients who have used other more traditional website setups (like Wordpress) rave about how easy to use Sitesfor.church is.  The tradeoff is we ask you to learn three skills:
+* Airtable
+* Markdown
+* Image Creation&lt;/p&gt;
+
+&lt;h2 id=&quot;airtable&quot;&gt;Airtable&lt;/h2&gt;
+
+&lt;p&gt;Your website data is managed through an Airtable database.  Airtable is an amazing program that allows you to manage your site with ease from any computer or smartphone.&lt;/p&gt;
+
+&lt;p&gt;Airtable is also built for sharing and collaboration, which means you can easily share access to all of your church databases with volunteers or you can share an individual database with a volunteer (like sharing just your sermons database with your sound volunteers.)&lt;/p&gt;
+
+&lt;p&gt;In Airtable, their are two main types of views that you can use.  The default view is called “the grid view” and it resembles a spreadsheet.  Simply click on an empty row and move from left to right the row and enter your information.  Alternatively, you can use a form view.  Airtable is better shown, than explained, so here is a video explaining how it all works:&lt;/p&gt;
+
+&lt;p&gt;Every field in Airtable should be self explanatory, but there are two conventions that you should be aware of that are the two other things we ask you to know…&lt;/p&gt;
+
+&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
+
+&lt;p&gt;In Airtable, if the field is labeled “content” then you need to write &lt;strong&gt;markdown&lt;/strong&gt; in that field.  So what is markdown?  Here’s the long answer:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Markdown is a plain text syntax that computers can easily translate into styled HTML.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It may sound intimidating, but it’s really not.  It’s extremely easy to learn and even easier to write.  It’s so easy that I write everything: my sermons, my letters, even our church bulletins - in markdown.  Markdown requires no special programs (although many markdown programs are out there).  You can type markdown content right into our content fields.&lt;/p&gt;
+
+&lt;p&gt;At it’s most basic, Markdown looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;gh&quot;&gt;# Basic Stuff&lt;/span&gt;
+
+&lt;span class=&quot;gu&quot;&gt;## Paragraphs, bold and italic &lt;/span&gt;
+
+Paragraphs are just paragraphs.  They are separated by a space.
+
+This is a new paragraph.  You make text &lt;span class=&quot;gs&quot;&gt;**bold**&lt;/span&gt; by placing two asterisks around it.  You make text &lt;span class=&quot;ge&quot;&gt;*italicized*&lt;/span&gt; by placing one set of asterisks around it.  &lt;span class=&quot;ge&quot;&gt;*This whole sentence is italicized.*&lt;/span&gt; 
+
+&lt;span class=&quot;gh&quot;&gt;# Level one headings start with a single hash (or number symbol) and a space then text.  Like this.&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;## This is a level two heading.&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;### And level three.&lt;/span&gt;
+
+&lt;span class=&quot;gu&quot;&gt;## Lists&lt;/span&gt;
+
+Bulleted lists start with an asterisk and a space.  Like this:
+&lt;span class=&quot;p&quot;&gt;
+*&lt;/span&gt; Item one.
+&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; Item two.
+&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; Item three.
+
+Numbered lists are similar, but they start with a number, a period, then a space.  Like this:
+&lt;span class=&quot;p&quot;&gt;
+1.&lt;/span&gt; Item one
+&lt;span class=&quot;p&quot;&gt;2.&lt;/span&gt; Item two
+&lt;span class=&quot;p&quot;&gt;3.&lt;/span&gt; Item three&lt;span class=&quot;sb&quot;&gt;
+
+
+&lt;/span&gt;&lt;span class=&quot;gh&quot;&gt;# Advanced Stuff &lt;/span&gt;
+
+&lt;span class=&quot;gu&quot;&gt;## Quotes&lt;/span&gt;
+
+Quotes can be inserted into your text by starting the line with a greater than sign and a space.  (I often use this for Bible verses) Like this:
+&lt;span class=&quot;gt&quot;&gt;
+&amp;gt; For God so loved the world that he gave his only begotten son...(John 3:16a)&lt;/span&gt;
+
+&lt;span class=&quot;gu&quot;&gt;## Links&lt;/span&gt;
+
+To insert a link in a paragraph, simply place the link text in square brackets, immediately followed by the URL in parenthesis.  Like this &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;link text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;http://URLhere.com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;.&lt;span class=&quot;sb&quot;&gt;
+
+
+&lt;/span&gt;&lt;span class=&quot;gu&quot;&gt;## Images&lt;/span&gt;
+Images are exactly like links, only they start with an exclamation point.  Like this:
+
+&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;http://linktoimagefile.jpg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;That’s it, you now know markdown.&lt;/p&gt;
+
+&lt;p&gt;If you are a visual learner, I’ve made a video explaining markdown and how it works with our sites here:&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/167274776&quot; width=&quot;640&quot; height=&quot;400&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/167274776&quot;&gt;A Five Minute Intro To Markdown&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/sitesforchurch&quot;&gt;Ryan Hayden&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you really want a deep-dive into Markdown.  Wes Bos has created a fantastic free video course on Markdown that only takes about 30 minutes to complete.  You can find it here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://masteringmarkdown.com/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;special-website-images&quot;&gt;Special Website Images&lt;/h2&gt;
+
+&lt;p&gt;The last piece of knowledge you are going to have to have is how to upload images.  Uploading images is pretty straightforward (just dragging or dropping images from your desktop to the airtable field will upload an image, or you can click the “plus” symbol in any attachment field to open an upload window) what you have to know is &lt;strong&gt;how to format the images you upload&lt;/strong&gt;.  To keep things simple, all across the site we only use two types of images: featured images and thumbnails.&lt;/p&gt;
+
+&lt;h3 id=&quot;featured-images&quot;&gt;Featured Images&lt;/h3&gt;
+
+&lt;p&gt;Any time a field has the term “featured image” in it’s name we are looking for a very specific kind of image.  We are looking for an image with a 16x9 aspect ratio.  Common 16x9 sizes include 1920x1080 (1080p) and 1280x720 (720p).  Images that are this size are the same sizes of standard television screens and are the most common format for slide images.&lt;/p&gt;
+
+&lt;h3 id=&quot;thumbnails&quot;&gt;Thumbnails&lt;/h3&gt;
+
+&lt;p&gt;Any time you see the term thumbnail in a field’s title what we are looking for is a square image.  At a minimum, we suggest an image that is at least 150x150 pixels.  Thumbnails are almost always pictures of people, and one easy way to get thumbnail images is to reuse twitter or facebook avatars.&lt;/p&gt;
+
+&lt;h3 id=&quot;helps&quot;&gt;Helps&lt;/h3&gt;
+
+&lt;p&gt;If you are most people, you don’t have the technical skill to make good looking website images, so we have two things to help you:&lt;/p&gt;
+
+&lt;h4 id=&quot;defaults&quot;&gt;Defaults&lt;/h4&gt;
+
+&lt;p&gt;Images are an important part of any web design and when your site uses current images - it will really come alive.  But if you choose not to upload a custom featured image for a blog post, sermon series or event - we’ve got you covered. Each theme comes with appropriate default images that will display when you don’t want to create your own.&lt;/p&gt;
+
+&lt;h4 id=&quot;canvacom&quot;&gt;Canva.com&lt;/h4&gt;
+
+&lt;p&gt;When you do want to create your own, we highly suggest a service called &lt;a href=&quot;http://canva.com&quot;&gt;canva.com&lt;/a&gt;.  Canva.com is a webapp that makes it super easy to create great looking images.  It’s completely free to use unless you decide to use one of their stock images (which are very affordably priced.)  Simply open canva and choose the “Presentation (16:9)” template.  Customize it to your liking and then click the &lt;strong&gt;download&lt;/strong&gt; button.&lt;/p&gt;
+
+&lt;p&gt;You can check out the video below, for in intro to canva.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/160321640&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/160321640&quot;&gt;Canva Integration&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/sitesforchurch&quot;&gt;Ryan Hayden&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Whenever possible, we include canva links in the description of the field.  In grid view, simply hover over the name of the field and you should see a canva.com link.  This will take you right to the right template. We also put these links in all of our forms.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;These are the best tools and easiest tools that we can find.  They are also useful for more than your website.  You can use markdown for all kinds of writing.  (We’ll have blog posts about that), you can use airtable for many things in your church (we’ll be releasing posts about that too) and you’ll find that the featured images can be reused as slides (or vice versa) or for other promotions.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 10 Jun 2016 13:50:36 -0500</pubDate>
+        <link>http://biblebaptistmattoon.org//general/2016/06/10/Sitesforchurch-101.html</link>
+        <guid isPermaLink="true">http://biblebaptistmattoon.org//general/2016/06/10/Sitesforchurch-101.html</guid>
+        
+        
+        <category>general</category>
+        
+      </item>
+    
+      <item>
+        <title>Airtable for a website?  Why you'll love it.</title>
+        <description>&lt;p&gt;Recently, at Sitesfor.church, we made the decision to use &lt;a href=&quot;http://airtable.com&quot;&gt;Airtable&lt;/a&gt; as the backbone of our church websites.  Airtable is an online database app (if Google Sheets and Microsoft Access had a baby it would look like Airtable.)  Using an app like this is a radical move - as far as we know no other web design company is doing - but we think you are going to love it.&lt;/p&gt;
+
+&lt;p&gt;Why?  We thought of ten reasons why you’ll like it.&lt;/p&gt;
+
+&lt;h2 id=&quot;you-own-your-data&quot;&gt;1. You own your data.&lt;/h2&gt;
+
+&lt;p&gt;Your data will live on your Airtable account. You can do whatever you want with it. If in the future you want to use another web service or pay for a custom site - you can still use airtable to update your site.&lt;/p&gt;
+
+&lt;p&gt;You can also add other databases and use them for whatever you want.  (We’re working on a list of some great ways to use Airtable for churches.)&lt;/p&gt;
+
+&lt;h2 id=&quot;its-ridiculously-easy-to-use&quot;&gt;2. It’s ridiculously easy to use.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2015/06/airtable-gif-demo.gif&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our old church website was run on a typical content management system with a sermon management plugin.  It worked, but wasn’t any fun.  When I showed the Airtable Sermon database to the volunteer who records our sermons he stopped me midway and said&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“This is much, much, easier.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Airtable is super easy to use.  I’ve used professional database applications that costs hundreds of dollars.  Airtable is better by orders of magnitude.  People just “get it.”  You will too.&lt;/p&gt;
+
+&lt;h2 id=&quot;there-are-great-mobile-apps&quot;&gt;3. There are great mobile apps.&lt;/h2&gt;
+
+&lt;p&gt;Airtable’s main app runs in your browser and you can access it anywhere.  It’s a fantastic web app that gives feels like a native app.&lt;/p&gt;
+
+&lt;p&gt;But Airtable also has a killer iOS app - which means you can take photos of an event with your phone and upload them to your church website with ease or record your sermon with your iPhone and upload it quickly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3-us-west-2.amazonaws.com/airtable-newsletter-assets/AirtableiPhoneScreenshots11-9-2015.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Airtable has a Android app in beta.  So soon Android users will be able to update their sermons in the same way.&lt;/p&gt;
+
+&lt;h2 id=&quot;collaborate-with-anyone-in-real-time&quot;&gt;4. Collaborate with anyone in real time.&lt;/h2&gt;
+
+&lt;p&gt;Airtable has great collaboration features.  You can easily add volunteers to your team and limit what they can and can’t edit.  You can bring in people to work with just one database or all of them.&lt;/p&gt;
+
+&lt;p&gt;You can also send notifications to your team members with comments. You can watch people update content on another device in real time.  It’s really awesome.&lt;/p&gt;
+
+&lt;h2 id=&quot;never-worry-about-updates&quot;&gt;5. Never worry about updates.&lt;/h2&gt;
+
+&lt;p&gt;I hate CMS updates.  Wordpress and it’s cousins update constantly.  It takes time.  It’s a hassle, and it’s absolutely necessary.  (If you don’t update your site you are likely to get hacked.)&lt;/p&gt;
+
+&lt;p&gt;You will never deal with application updates using our system.&lt;/p&gt;
+
+&lt;h2 id=&quot;no-plugins--just-create-a-new-database&quot;&gt;6. No plugins.  Just create a new database.&lt;/h2&gt;
+
+&lt;p&gt;A typical CMS has a built in blog.  That’s it.  If you want more types of content, you have to add plugins.  Sometimes these plugins are expensive. Always these plugins are risky, because they potentally open up your website to hackers.  They slow your site down and they too need to be updated.&lt;/p&gt;
+
+&lt;p&gt;Most plugins are just what developers call CRUD apps. That’s not derogitory, it just stands for Create, Read, Update and Destroy.  Airtable can handle 3 of those functions (create, update, and destroy) and all the site needs to do is read the information from the database.  This means that if you can dream it and put it into a database, we can easily get it displayed on your site.&lt;/p&gt;
+
+&lt;h2 id=&quot;there-is-less-to-break&quot;&gt;7. There is less to break.&lt;/h2&gt;
+
+&lt;p&gt;Content Management Systems are a pain because they are prone to breaking. If you see a 404 error page - it’s almost always the CMSs fault.  Because your site won’t run on a CMS - there will be less to break.  Your site is just plain html.  Even when your when your site can’t access airtable - it will be able to load static content.&lt;/p&gt;
+
+&lt;h2 id=&quot;you-dont-have-to-trust-cheap-hosting-servers&quot;&gt;8. You don’t have to trust cheap hosting servers.&lt;/h2&gt;
+
+&lt;p&gt;Because your data is on Airtable - you don’t have to trust hosting servers.  I’ve been doing this for over 10 years and several times a server has been gotten hacked and I’ve had to role back websites by several weeks.  (In most cases, the culprit was a wordpress plugin.)  Because your data is on Airtable and you we are just hosting the theme - if the host goes down you will lose nothing.&lt;/p&gt;
+
+&lt;h2 id=&quot;you-can-roll-back-your-data-very-easily&quot;&gt;9. You can roll back your data very easily.&lt;/h2&gt;
+
+&lt;p&gt;Airtable has a fantastic versioning system.  That means if you like the way your blog post sounded in a draft you wrote two hours ago - it’s nothing to roll that back (and then forward again.)&lt;/p&gt;
+
+&lt;h2 id=&quot;you-can-have-it-both-ways&quot;&gt;10. You can have it both ways.&lt;/h2&gt;
+
+&lt;p&gt;Eventually, we will have a custom dashboard for your site and if you are more comfortable, you can use that.  But your site will always be based on Airtable, and you can keep using that.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The one tradeoff of using Airtable is using markdown for long content.  We love markdown anyway and think this is really worth it.  Do you have your own thoughts about Airtable?  Let us know in the comments.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 May 2016 13:50:36 -0500</pubDate>
+        <link>http://biblebaptistmattoon.org//general/2016/05/25/airtable-for-a-website.html</link>
+        <guid isPermaLink="true">http://biblebaptistmattoon.org//general/2016/05/25/airtable-for-a-website.html</guid>
+        
+        
+        <category>general</category>
+        
+      </item>
+    
+      <item>
+        <title>Our weird business plan and it’s little known baptist history</title>
+        <description>&lt;p&gt;Sitesfor.church has two goals:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Provide the best church website experience ever at a price even small churches can afford.&lt;/li&gt;
+  &lt;li&gt;Provide jobs for ministers-in-training that will help support them as well as build essential skills they can bring into the ministry.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The first goal has been our prime focus as we’ve worked on this, but as we launch (Hopefully at the beginning of May) we hope to transition our efforts to the second goal.  It’s our plan to hire Bible college and seminary students as well as bivocational pastors or other ministers who are needing support, train them, and to pay them on commission both for sales and to be liason’s for each church website account.&lt;/p&gt;
+
+&lt;p&gt;People understand our first goal - but the second one often leaves people scratching their heads.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, We’re far from the first person to come up with something like this.  &lt;a href=&quot;https://en.wikipedia.org/wiki/James_Robinson_Graves&quot;&gt;James R. Graves&lt;/a&gt;, one of the most influential people in American Baptist history, did something similar in the 1850s and it’s still around today.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/graves.jpg&quot; alt=&quot;graves2.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;James Graves started &lt;a href=&quot;http://www.southwestern.com/Southwestern-History.aspx?&quot;&gt;Southwestern Publishing&lt;/a&gt; company and came up with the novel idea of employing college students to sell books door to door.  Southwestern (Now known as “The Southwestern Company”) is still around today and is widely recognized as one of the best leadership training programs in the country.  Several state governors, fortune 500 CEOs, and even pastor/author Max Lucado (as well as more than 100,000 others) spent their summers working for Southwestern and credit it as a huge part of their life.&lt;/p&gt;
+
+&lt;p&gt;It’s our goal that Sitesfor.church will provide a similar benefit to those who work for us as site reps.  By working with us they will learn:
+* Sales skills.
+* People skills.
+* Technology and design skills.
+They will also get to befriend and encourage pastors all over the country and learn about the ministry as they help each of these churches set up their ministry websites.&lt;/p&gt;
+
+&lt;p&gt;So not only will they get a good paying job they can do while in college, they will learn new skills and gain invaluable experience that they can bring with them into the ministry.  We think it’s a win/win/win: churches benefit with a great church website, college students benefit by earning and learning and the cause of Christ benefits as both of these things bear fruit.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 13:50:36 -0500</pubDate>
+        <link>http://biblebaptistmattoon.org//general/2016/03/31/our-weird-business-model.html</link>
+        <guid isPermaLink="true">http://biblebaptistmattoon.org//general/2016/03/31/our-weird-business-model.html</guid>
+        
+        
+        <category>general</category>
+        
+      </item>
+    
+  </channel>
+</rss>

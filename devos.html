@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="devos">
+    <div class="sermon-record" style="display: flex; justify-content: space-around; max-width: 900px; flex-wrap: wrap; margin: 30px auto 30px auto;">
+    <p><strong>Title</strong></p>
+    <p><strong>Date</strong></p>
+    <p><strong>File</strong></p>
+    </div>
+    {% for devo in site.data.radio_devos.records %}
+    {% if devo.fields.sent_in != true %}
+    <div class="sermon-record" style="display: flex; justify-content: space-between; max-width: 900px; flex-wrap: wrap; margin: 30px auto 30px auto;">
+    <p>{{devo.fields.title}}</p>
+    <p>{{devo.fields.date}}</p>
+    {% for mp3 in devo.fields.mp3 %}
+    <a href="{{mp3.url}}" download>{{mp3.url}}</a>
+    {% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

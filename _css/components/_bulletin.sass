@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+body
+    font-family: 'Lato', sans-serif
+    display: flex
+@media all
+    @media print and (color)
+        -webkit-print-color-adjust: exact
+        print-color-adjust: exact
+    @page
+        margin-left: .25in
+        margin-right: 0
+        margin-top: .15in
+        margin-bottom: .25in
+    .page
+        width: 5in
+        height: 7.6in
+        display: flex
+        flex-wrap: wrap
+        padding-right: .25in
+    .page:last-child
+        border-right: none
+        margin-right: none
+        padding-left: .25in
+        padding-right: none
+
+    .header
+        width: 100%
+        height: 1in
+        h1
+            background: black
+            color: white
+            margin-bottom: 0
+            font-size: 22pt
+            font-weight: 700
+            margin-top: .25in
+            margin-left: .25in
+            margin-right: .2in
+            margin-bottom: .25in
+            padding-top: .08in
+            padding-bottom: .08in
+            padding-left: .2in
+            border-radius: 0 .2in 0 .2in
+            span
+                font-weight: light
+                padding-left: .9in
+                font-weight: 300
+                font-style: italic
+
+    .sidebar
+        width: 1.5in
+        border-right: 1px solid black
+        height: 6.9in
+        margin-bottom: .25in
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        div
+            margin-left: .25in
+            margin-right: .25in
+            h3
+                font-size: 11pt
+                font-weight: 600
+                border-bottom: 1px solid black
+                margin-bottom: .05in
+            h4
+                font-size: 9pt
+                font-weight: 600
+                margin-bottom: 0
+                margin-top: 5px
+            p.description
+                font-size: 8pt
+                font-style: italic
+                margin-top: 3px
+            p
+                font-size: 9pt
+            ul
+                list-style-type: none
+                padding-left: 0
+                margin-left: 0
+                margin-top: 0
+                li
+                    font-size: 9pt
+        div.info
+            text-align: center
+            p
+                font-size: 8pt
+                line-height: 8pt
+                margin-bottom: 0
+                margin-top: 5px
+
+
+
+    .main
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 3in
+        height: 6.9in
+        h2
+            background: black
+            color: white
+            margin-bottom: 0
+            width: 100%
+            font-size: 18pt
+            font-weight: 400
+            margin-top: .1in
+            margin-left: .1in
+            margin-bottom: .1in
+            padding-top: .03in
+            padding-bottom: .03in
+            padding-left: .2in
+            border-radius: 0 .2in 0 .2in
+        h2:first-child
+            margin-top: -.05in
+        ul
+            list-style-type: none
+            padding: 0
+            margin: 0
+
+        .health-needs .text
+            margin-left: .15in
+            -webkit-column-width: 130px
+            -webkit-column-count: 2
+            -webkit-column-gap: 13px
+            -moz-column-gap: 13px
+            column-gap: 13px
+            ul li
+                font-size: 7pt
+                span
+                    text-decoration: underline
+        .cancer .text
+            margin-left: .15in
+            -webkit-column-width: 70px
+            -webkit-column-count: 3
+            -webkit-column-gap: 13px
+            -moz-column-gap: 13px
+            column-gap: 13px
+            ul li
+                font-size: 7pt
+        .other .text
+            margin-left: .15in
+            -webkit-column-width: 130px
+            -webkit-column-count: 2
+            -webkit-column-gap: 13px
+            -moz-column-gap: 13px
+            column-gap: 13px
+            ul li
+                font-size: 7pt
+                span
+                    text-decoration: underline

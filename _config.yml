@@ -1,0 +1,72 @@
+title: Bible Baptist Church of Mattoon IL
+email: "pastorryanhaydenl@gmail.com"
+description: > # this means to ignore newlines until "baseurl:"
+  Sitesfor.church makes affordable church websites built for the needs of the 90% of churches with less than 200 members.  
+  You won't find a professional solution that is more affordable or easier to use.  We also are deliberate about giving jobs
+  to Bible college students and other aspiring pastors.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://biblebaptistmattoon.org/" # the base hostname & protocol for your site | Switch to "http://biblebaptistmattoon.org/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
+twitter_username: jekyllrb
+github_username:  jekyll
+default_header_image: "assets/default_header.jpg"
+default_sermon_image: "assets/default_header.jpg"
+default_blog_image: "assets/default_header.jpg"
+default_about_image: "assets/default_header.jpg"
+default_calendar_image: "assets/calendar_default.jpg"
+
+# Airtable API Stuff
+airtable:
+  apikey: "keyRTLlrVS02vC3Vx"
+  blog: "appxF48xfkO7dHWGh"
+  sermons: "apprDNNyNO4RHDP1q"
+  series: "apprDNNyNO4RHDP1q"
+  ministries: "appo4EmHX9KELKJ0u"
+  photos: "appo4EmHX9KELKJ0u"
+  events: "appo4EmHX9KELKJ0u"
+  abouts: "appNOtPfC2oY5GcGt"
+  sick: "app97CT9gvhCTVfBj"
+  cancer: "app97CT9gvhCTVfBj"
+  other: "app97CT9gvhCTVfBj"
+  weekly: "app97CT9gvhCTVfBj"
+
+# Build settings
+markdown: kramdown
+ 
+# Exclude
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js 
+  - bower_components
+
+page_gen:
+  - data: 'ministries'
+    template: 'ministries'
+    name: 'name'
+    dir: 'ministries'
+  - data: 'series'
+    template: 'series'
+    name: 'title'
+    dir: 'series'
+  - data: 'sermons'
+    template: 'sermon'
+    name: 'title'
+    dir: 'sermons'
+  - data: 'blog'
+    template: 'blog-entry'
+    name: 'title'
+    dir: 'blog-posts'
+  - data: 'abouts'
+    template: 'aboutpage'
+    name: 'title'
+    dir: 'about-us'
+  - data: 'events'
+    template: 'event'
+    name: 'event_name'
+    dir: 'events'
+
+ftp_host: 'biblebaptistmattoon.org'
+ftp_dir: 'biblebaptistmattoon.org/'
+ftp_passive: false
+ftp_username: 'ryahay11'
+ftp_password: '@88Volvocj'

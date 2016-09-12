@@ -1,0 +1,77 @@
+---
+layout: bulletin
+---
+
+<div class="page">
+  <div class="header">
+    <h1>Prayer Requests <span>{{site.time | date: "%m/%-d" }}</span></h1>
+  </div><!--/header-->
+  <div class="sidebar">
+      {% for item in site.data.weekly %}
+    <div class="missionary">
+        <h3>Missionary:</h3>
+        <h4>{{item.Missionary}}</h4>
+        <p class="description">{{item.Missionary_Description}}</p>
+    </div><!--/Missionary -->
+    <div class="shutins">
+        <h3>Shut Ins:</h3>
+        <ul>
+            <li>Pastor Pullen</li>
+            <li>Jerry Hopper</li>
+            <li>Don Taylor</li>
+            <li>Carolyn Rinehart</li>
+            <li>Shirley Price</li>
+        </ul>
+
+    </div><!-- /shutins -->
+    <div class="ministry">
+        <h3>Ministry:</h3>
+        <h4>{{item.Featured_Ministry}}</h4>
+        <p class="description">{{item.Ministry_description}}</p>
+    </div><!--/Ministry -->
+    <div class="info">
+        <img src="assets/logo_square.png" alt="" width="75px" height="75px">
+        <p>Bible Baptist Church</p>
+        <p>3401 Marion Ave</p>
+        <p>(217) 499-0822</p>
+        <p>pastorhayden@me.com</p>
+    </div><!--/Ministry -->
+    {% endfor %}
+  </div><!--/sidebar  -->
+  <div class="main">
+      <div class="health-needs">
+        <h2>Health Needs</h2>
+        <div class="text">
+            <ul>
+                {% for request in site.data.sick %}
+                <li><span>{{request.Name}}</span> {% if  request.Description%}- {{request.Description | truncate: 16}} {% endif %}</li>
+                {% endfor %}
+            </ul>
+        </div><!--text-->
+
+      </div><!-- /health needs -->
+      <div class="cancer">
+        <h2>Cancer</h2>
+        <div class="text">
+            <ul>
+                <ul>
+                    {% for request in site.data.cancer %}
+                    <li>{{request.Name}}</li>
+                    {% endfor %}
+                </ul>
+            </ul>
+        </div><!--text-->
+      </div><!-- /cancer -->
+      <div class="other">
+          <h2>Other</h2>
+          <div class="text">
+              <ul>
+                  {% for request in site.data.other %}
+                  <li><span>{{request.Name}}</span> {% if  request.Description%}- {{request.Description}} {% endif %}</li>
+                  {% endfor %}
+              </ul>
+          </div><!--text-->
+
+      </div><!-- /other  -->
+  </div><!-- /main -->
+</div><!--/page-->

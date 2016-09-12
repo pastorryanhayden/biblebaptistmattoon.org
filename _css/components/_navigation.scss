@@ -1,0 +1,135 @@
+header {
+    background: $dark-gray;
+}
+.infoBar {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    h1 {
+    width: 367px;
+    height: 65px;
+    flex-grow: 2;
+    @include breakpoint (725px down) {
+        flex-grow:1;
+        flex-shrink: 2;
+    }
+    }
+
+    h1 a {
+    text-indent: -5000px;
+    background: url(http://storage.biblebaptistmattoon.org/media/logoblue.png) no-repeat center center;
+    width: 367px;
+    height: 65px;
+    line-height: 65px;
+    display: block;
+    margin-left: 20px;
+    }
+    .service-times {
+        display: none;
+        @include breakpoint (large){
+            display: block;
+            max-width: 330px;
+            text-align: right;
+            border-right: 1px solid $white;
+            flex-grow: 1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-right: 10px;
+        }
+        li {
+            line-height: 20px;
+            font-size: 13px;
+        }
+        li span {
+            color: $main-color;
+            margin-left: 35px;
+        }
+    }
+    .contact {
+        display: none;
+        @include breakpoint (740px){
+                    display: block;
+                    max-width: 350px;
+                    text-align: right;
+                    flex-grow: 1;
+                    padding-right: 20px;
+
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+}
+
+.MainNavigation {
+    display: none;
+    @include breakpoint (726px){
+        display: block;
+         background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
+    }
+
+    ul.dropdown.menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul li a {
+        color: $dark-gray;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: $header-font-family;
+    }
+
+.is-dropdown-submenu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    min-width: 200px;
+    z-index: 1;
+    background: #fefefe;
+    border: 1px solid #cacaca;
+}
+
+}
+
+.MobileNavigation {
+    background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
+    padding-right:30px;
+    text-align: right;
+
+    button {
+        color: $dark-gray;
+        font-size: 30px;
+        font-family: $header-font-family;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint (726px) {
+        display: none;
+    }
+}
+.off-canvas-wrapper-inner, .off-canvas {
+    min-height: 100vh;
+}
+
+.off-canvas-content, .off-canvas-content {
+    box-shadow: none;
+}
+
+.mobile-sidebar {
+    ul li {padding-left: 20px;}
+}
+
+.js-drilldown-back {
+  // ...
+}

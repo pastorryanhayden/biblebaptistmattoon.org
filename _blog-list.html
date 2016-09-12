@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="blogPost">
+{% for post in site.data.blog %}
+<div class="blogPost__header">
+        <h1><a href="#">{{post.title}}</a></h1>
+        <p>Written by: {% if page.author %} {{ page.author }} {% else %} Sitesfor.church staff {% endif %}  {%if post.date%} on {{ post.date | date: "%b %-d, %Y" }} {% endif %}</p>
+        {% if post.featured_image %}
+        {% for img in post.featured_image%}
+        <img src="{{img.url}}" alt="{{post.title}}" style="max-width: 100%;">
+        {% else %}
+        <img src="http://placehold.it/560x315" alt="Blog Featured Image">
+        {% endfor %}
+        {% endif %}
+    </div><!--/blogPost__header-->
+    <div class="blogPost__content">
+        {{ post.body_content | strip_html | truncatewords:75}}
+    </div>
+    <a  class="button readmore" href="{{ post.title | datapage_url: 'blog' }}">Read more...</a>
+{% endfor %}
+</div>
