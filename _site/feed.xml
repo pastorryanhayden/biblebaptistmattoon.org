@@ -4,10 +4,10 @@
     <title>Cranesville Bible Church</title>
     <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus blanditiis odio corrupti,  illum architecto consequuntur, quaerat unde repudiandae qui temporibus! Fuga maxime molestiae hic impedit  sit sint perferendis rerum unde.
 </description>
-    <link>http://localhost:3000//</link>
-    <atom:link href="http://localhost:3000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Sep 2016 11:50:18 -0500</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2016 11:50:18 -0500</lastBuildDate>
+    <link>http://biblebaptistmattoon.org//</link>
+    <atom:link href="http://biblebaptistmattoon.org//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 20 Sep 2016 12:02:18 -0500</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2016 12:02:18 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
   </channel>
