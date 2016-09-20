@@ -33,15 +33,19 @@ footer {
     font-style: italic;
 }
 
-.address {
+footer .address {
     border-top:  1px solid $light-gray;
     padding-top: 20px;
 }
 
-.address p {
+footer .address ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+footer .address li {
     font-size: 12px;
 }
 
-.footer-sign-in {
+footer .footer-sign-in {
     color: $medium-gray;
 }

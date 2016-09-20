@@ -1,36 +1,41 @@
+<style type="text/css">
+    h1 a {
+    text-indent: -5000px;
+    background: url({{site.data.info[0].Church_Logo[0].url}}) no-repeat center center;
+    width: 367px;
+    height: 65px;
+    line-height: 65px;
+    display: block;
+    margin-left: 20px;
+    }
+</style>
 <div class="off-canvas-wrapper">
 <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 <header>
     <div class="infoBar">
     <h1><a href="{{site.url}}">Bible Baptist Church <span>Mattoon, IL</span></a></h1>
     <div class="service-times">
-            <ul class="menu vertical">
-                <li>Sunday School<span> 9:30AM</span></li>
-                <li>Morning Worship<span>10:30AM</span></li>
-                <li>Evening Worship<span> 6:00PM</span></li>
-                <li>Wednesday Bible Study<span> 7:00PM</span></li>
-            </ul>
+            {% include service-schedule.html %}
     </div><!--/service-times-->
     <div class="contact">
-            <p>
-                3401 Marion Ave, Mattoon, IL 61938 <br>
-                (217) 499-0822 • office@biblebaptistmattoon.org <br>
-                <a href="#"><i class="fi-social-facebook"></i> biblebaptistmattoon</a> <a href="#"><i class="fi-social-twitter"></i> BBCmattoon</a>
-            </p>
+            {% include address-header.html %}
     </div><!--/contact-->
 
     </div><!--/infoBar-->
 <div class="MainNavigation">
         <ul class="dropdown menu" data-dropdown-menu>
             <li><a href="{{ "welcome.html" | prepend: site.baseurl | prepend: site.url }}">WELCOME</a></li>
-            <li><a href="#">ABOUT US</a>
+            <li class="is-dropdown-submenu-parent"><a href="#">ABOUT US</a>
                 <ul class="menu">
+                    <li><a href="{{site.url}}our-leadership.html">Our Leadership</a></li>
+                    <li><a href="{{site.url}}our-beliefs.html">Our Beliefs</a></li>
                     {% for item in site.data.abouts %}
                     <li><a href="{{ item.title | datapage_url: 'about-us' | prepend: site.baseurl | prepend: site.url }}">{{item.title}}</a></li>
                     {% endfor %}
+                    <li><a href="{{site.url}}the-gospel.html">The Gospel</a></li>
                 </ul>
             </li><!--/End of About Us-->
-            <li><a href="#">MINISTRIES</a>
+            <li class="is-dropdown-submenu-parent"><a href="#">MINISTRIES</a>
                 <ul class="menu">
                     {% for item in site.data.ministries %}
                     <li><a href="{{ item.name | datapage_url: 'ministries' | prepend: site.baseurl | prepend: site.url }}">{{item.name}}</a></li>
@@ -38,7 +43,7 @@
                 </ul>
             </li><!--/ministries-->
             <li><a href="{{ "calendar-list.html" | prepend: site.baseurl | prepend: site.url }}">CALENDAR</a></li>
-            <li><a href="#">MEDIA</a>
+            <li class="is-dropdown-submenu-parent"><a href="#">MEDIA</a>
                 <ul class="menu">
                     <li><a href="{{ "sermons.html" | prepend: site.baseurl | prepend: site.url }}">Sermons</a></li>
                     <li><a href="{{ "blog-list.html" | prepend: site.baseurl | prepend: site.url }}">Blog</a></li>
@@ -57,14 +62,17 @@
     <li><a href="{{site.url }}">HOME</a></li>
     <li><a href="{{ "welcome.html" | prepend: site.baseurl | prepend: site.url }}">WELCOME</a></li>
     <li><a href="#">ABOUT US</a>
-        <ul class="menu">
-            {% for item in site.data.abouts %}
+        <ul class="menu vertical">
+            <li><a href="{{site.url}}our-leadership.html">Our Leadership</a></li>
+            <li><a href="{{site.url}}our-beliefs.html">Our Beliefs</a></li>
+                    {% for item in site.data.abouts %}
             <li><a href="{{ item.title | datapage_url: 'about-us' | prepend: site.baseurl | prepend: site.url }}">{{item.title}}</a></li>
-            {% endfor %}
+                    {% endfor %}
+            <li><a href="{{site.url}}the-gospel.html">The Gospel</a></li>
         </ul>
     </li><!--/End of About Us-->
     <li><a href="#">MINISTRIES</a>
-        <ul class="menu">
+        <ul class="menu vertical">
                     {% for item in site.data.ministries %}
                     <li><a href="{{ item.name | datapage_url: 'ministries' | prepend: site.baseurl | prepend: site.url }}">{{item.name}}</a></li>
                     {% endfor %}
@@ -72,7 +80,7 @@
     </li><!--/ministries-->
     <li><a href="{{ "calendar-list.html" | prepend: site.baseurl | prepend: site.url }}">CALENDAR</a></li>
     <li><a href="#">MEDIA</a>
-        <ul class="menu">
+        <ul class="menu vertical">
             <li><a href="{{ "sermons.html" | prepend: site.baseurl | prepend: site.url }}">Sermons</a></li>
             <li><a href="{{ "blog-list.html" | prepend: site.baseurl | prepend: site.url }}">Blog</a></li>
             <li><a href="{{ "gallery.html" | prepend: site.baseurl | prepend: site.url }}">Gallery</a></li>

@@ -11,10 +11,10 @@ header {
 
     h1 {
     width: 367px;
-    height: 65px;
+    height: 80px;
     flex-grow: 2;
     @include breakpoint (725px down) {
-        flex-grow:1;
+        flex-grow:1; 
         flex-shrink: 2;
     }
     }
@@ -27,6 +27,7 @@ header {
     line-height: 65px;
     display: block;
     margin-left: 20px;
+    margin-top: 4px;
     }
     .service-times {
         display: none;
@@ -87,18 +88,10 @@ header {
         font-weight: 600;
         font-family: $header-font-family;
     }
-
-.is-dropdown-submenu {
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    min-width: 200px;
-    z-index: 1;
-    background: #fefefe;
-    border: 1px solid #cacaca;
 }
 
+.MainNavigation ul li ul li a {
+    color: darken($subtle-color, 15%);
 }
 
 .MobileNavigation {
@@ -107,7 +100,7 @@ header {
     text-align: right;
 
     button {
-        color: $dark-gray;
+        color: $white;
         font-size: 30px;
         font-family: $header-font-family;
         line-height: 50px;
@@ -124,12 +117,4 @@ header {
 
 .off-canvas-content, .off-canvas-content {
     box-shadow: none;
-}
-
-.mobile-sidebar {
-    ul li {padding-left: 20px;}
-}
-
-.js-drilldown-back {
-  // ...
 }

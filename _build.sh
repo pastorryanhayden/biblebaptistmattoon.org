@@ -1,7 +1,7 @@
 #!/bin/bash
 
-path="/Users/ryanhayden/github/biblebaptistmattoon.org/";
-git_path="git@github.com:SitesForChurch/California-Theme.git";
+path="/Users/ryanhayden/github/cranesvillebiblechurch.com/";
+git_path="git@github.com:pastorryanhayden/cranesvillebiblechurch.com.git";
 need_build=false;
 #!/usr/bin/env bash
 
@@ -21,5 +21,5 @@ node-sass _css/app.scss _site/assets/css/app.css;
 echo "Upload via glynn";
 glynn;
 # echo "Sync";
-# # osascript upload.scpt;
-# # echo -e '\n Complete all scripts';
+# osascript upload.scpt;
+# echo -e '\n Complete all scripts';

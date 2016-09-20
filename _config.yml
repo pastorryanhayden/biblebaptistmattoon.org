@@ -1,18 +1,26 @@
-title: Bible Baptist Church of Mattoon IL
-email: "pastorryanhaydenl@gmail.com"
+# What's the name of the church?
+title: Cranesville Bible Church
+# Give a brief description of the church
 description: > # this means to ignore newlines until "baseurl:"
-  Sitesfor.church makes affordable church websites built for the needs of the 90% of churches with less than 200 members.  
-  You won't find a professional solution that is more affordable or easier to use.  We also are deliberate about giving jobs
-  to Bible college students and other aspiring pastors.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus blanditiis odio corrupti, 
+    illum architecto consequuntur, quaerat unde repudiandae qui temporibus! Fuga maxime molestiae hic impedit 
+    sit sint perferendis rerum unde.
+# Leave this alone
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://biblebaptistmattoon.org/" # the base hostname & protocol for your site | Switch to "http://biblebaptistmattoon.org/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
-twitter_username: jekyllrb
-github_username:  jekyll
+# Change this to the domain when you are finished and ready to publish.
+
+url: "http://biblebaptistmattoon.org/" # the base hostname & protocol for your site | Switch to http://cranesvillebiblechurch.com/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
+
+# This is the path to the default images.  If you add different default images you can change them here.
 default_header_image: "assets/default_header.jpg"
 default_sermon_image: "assets/default_header.jpg"
 default_blog_image: "assets/default_header.jpg"
 default_about_image: "assets/default_header.jpg"
 default_calendar_image: "assets/calendar_default.jpg"
+
+# The lattitude and longitude for Google Maps
+map_lat: "39.476286"
+map_long: "-88.4009097"
 
 # Airtable API Stuff
 airtable:
@@ -23,11 +31,17 @@ airtable:
   ministries: "appo4EmHX9KELKJ0u"
   photos: "appo4EmHX9KELKJ0u"
   events: "appo4EmHX9KELKJ0u"
-  abouts: "appNOtPfC2oY5GcGt"
+  abouts: "appaVLGyitzv8N41y"
   sick: "app97CT9gvhCTVfBj"
   cancer: "app97CT9gvhCTVfBj"
   other: "app97CT9gvhCTVfBj"
   weekly: "app97CT9gvhCTVfBj"
+  welcome: "appdKWpaSSSTcH3oN"
+  info: "appWEk90aCD6aIerl"
+  contact: "appcF6oP8OhXgbCio"
+  missionaries: "appIfFWAjJoPWDoyp"
+
+# LEAVE EVERYTHING ELSE ALONE!!
 
 # Build settings
 markdown: kramdown
@@ -38,6 +52,11 @@ exclude:
   - node_modules
   - gulpfile.js 
   - bower_components
+keep_files:
+  - css
+  - assets/css
+  - assets/js 
+
 
 page_gen:
   - data: 'ministries'
@@ -64,6 +83,7 @@ page_gen:
     template: 'event'
     name: 'event_name'
     dir: 'events'
+
 
 ftp_host: 'biblebaptistmattoon.org'
 ftp_dir: 'biblebaptistmattoon.org/'

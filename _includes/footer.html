@@ -1,14 +1,10 @@
 <footer>
     <div class="footer-wrapper">
         <div class="footer-info">
-        <h3>Bible Baptist Church</h3>
-        <p>It lives • It speaks • It changes lives</p>
+        <h3>{{site.data.info[0].Church_Name}}</h3>
+        <p>{{site.data.info[0].Church_Tagline}}</p>
         <div class="address">
-            <p><i class="fi-map"></i>  3401 Marion Ave. Mattoon, IL 61938 <br>
-                <i class="fi-telephone"></i>  (217) 499-0822 <br>
-                <i class="fi-mail"></i>   info@biblebaptistmattoon.org <br>
-                <a href="#" title="sign in" class="footer-sign-in"><i class="fi-widget"></i> Manager Sign In</a>
-            </p>
+          {% include address.html %}
         </div><!--/address-->
     </div><!--/footer-info-->
     </div><!--/footer-wrapper-->
@@ -16,6 +12,12 @@
 </div><!--/ off canvas content wrapper-->
 </div><!--/off canvas wrapper 2-->
 </div><!--/ off canvas wrapper 1-->
-<script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
+<script src="js/jquery.min.js"></script>
+<!-- this will include every plugin and utility required by Foundation -->
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+<script>
+        $(document).foundation();
+    </script>
 </body>
 </html>

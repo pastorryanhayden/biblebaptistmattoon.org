@@ -1,14 +1,15 @@
 {
-  "name": "sitesforchurch",
+  "name": "SitesforChurch-master-template.",
   "version": "1.0.0",
-  "description": "",
+  "description": "All the templates for Sitesfor.church intended for use by our site-reps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "./_test.sh",
+    "build": "./_npm ibuild.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SitesForChurch/sitesforchurch-jekyll.git"
+    "url": "git+https://github.com/pastorryanhayden/cranesvillebiblechurch.com.git"
   },
   "author": "Ryan Hayden",
   "license": "ISC",
@@ -17,24 +18,26 @@
   },
   "homepage": "https://github.com/SitesForChurch/sitesforchurch-jekyll#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-downloader": "^1.0.4",
-    "js-yaml": "^3.6.1",
-    "jsonfile": "^2.3.1"
+    "airtable": "^0.4.1",
+    "bower": "^1.7.9",
+    "browser-sync": "latest",
+    "browserify": "latest",
+    "expect.js": "latest",
+    "jscs": "latest",
+    "jshint": "latest",
+    "jsonfile": "^2.3.1",
+    "mocha": "latest",
+    "node-sass": "^3.8.0",
+    "request": "^2.72.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "yargs": "^4.7.1"
   },
   "devDependencies": {
     "airtable": "^0.4.1",
+    "bower": "^1.7.9",
     "browser-sync": "^2.13.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-data": "^1.2.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-json-editor": "^2.2.1",
-    "gulp-json-transform": "^0.3.2",
-    "gulp-sass": "^2.3.1",
-    "gulp-streamify": "^1.0.2",
-    "gulp-util": "^3.0.7",
-    "request": "^2.72.0",
-    "vinyl-source-stream": "^1.1.0"
+    "js-yaml": "^3.5.4",
+    "jsonfile": "^2.3.1"
   }
 }

@@ -1,0 +1,40 @@
+.aboutContent {
+    @include grid-row;
+    min-height: 65vh;
+}
+
+.aboutContent__content {
+    @include breakpoint(small){
+    @include grid-column(12);
+    }
+}
+
+.aboutContent__content__pageHeader {
+    @include grid-column(12);
+    margin-top: 30px;
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+ h1 {
+    padding-top: 20px;
+}
+
+h1 span {
+    color: $primary-color;
+}
+}
+
+.aboutContent__content__content {
+    padding-top: 20px;
+    @include breakpoint(small){
+    @include grid-column(12);
+    }
+    
+}
+
+
+

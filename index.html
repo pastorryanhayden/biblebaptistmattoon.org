@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
+<style type="text/css">
+.hero {
+    background: url({{site.data.home[0].Main_Image[0].url}}) no-repeat top center;
+    min-height: 80vh;
+    background-size: cover;
+}
+
+</style>
+
 <div class="hero">
     <div class="hero__box">
-        <h3 class="worship">Worshipping Christ</h3>
-        <h3 class="study">Studying God's Word</h3>
-        <h3 class="serve">Serving Our Community</h3>
-        <h3 class="seek">Seeking to Make Disciples for Jesus Christ</h3>
+        {{site.data.home[0].Intro_Text}}
     </div>
     <p><i class="fi-arrow-down"></i></p>
 </div><!--/hero-->
@@ -78,9 +84,9 @@ layout: default
 </div><!--/homeEvents-->
 <div class="homeLinks">
     <ul class="quickLinks">
-        <li><a href="{{site.url}}about-us/our-leadership.html"><i class="fi-torso"></i> Meet Our Pastor</a></li>
+        <li><a href="{{site.url}}our-leadership.html"><i class="fi-torso"></i> Meet Our Pastor</a></li>
         <li><a href="{{site.url}}blog-list.html"><i class="fi-book"></i> Read Blog Posts</a></li>
         <li><a href="{{site.url}}welcome.html"><i class="fi-map"></i> Get Directions</a></li>
-        <li><a href="#"><i class="fi-first-aid"></i> The Gospel</a></li>
+        <li><a href="{{site.url}}the-gospel.html"><i class="fi-first-aid"></i> The Gospel</a></li>
     </ul>
 </div>

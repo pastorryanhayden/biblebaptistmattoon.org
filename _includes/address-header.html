@@ -1,0 +1,7 @@
+<p>
+{{site.data.location[0].Street_Address}} {{site.data.location[0].Street_Address2}}, {{site.data.location[0].City }}, {{site.data.location[0].State }} {{site.data.location[0].Zip }} <br>
+{{site.data.contact[0].Phone }} • {{site.data.contact[0].Church_email }} <br>
+{% if site.data.contact[0].Facebook %}<a href="{{site.data.contact[0].Facebook}}"><i class="fa fa-facebook"></i></a> {% endif %}
+          {% if site.data.contact[0].Twitter %}<a href="{{ site.data.contact[0].Twitter }}"><i class="fa fa-twitter"></i></a> {% endif %}
+          {% if site.data.contact[0].Youtube %}<a href="{{ site.data.contact[0].Youtube }}"><i class="fa fa-youtube"></i></a> {% endif %}
+</p>

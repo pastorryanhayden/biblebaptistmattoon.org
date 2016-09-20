@@ -1,0 +1,6 @@
+<ul class="menu vertical">
+    {% for item in site.data.service_schedule %}
+    
+    <li>{{item.Service_name}} {% if item.Service_time %}<span> {{item.Service_time}}</span>{% endif %}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+ {% if  site.data.gospel[0].Featured_Image %}
+            <style>
+                .aboutPage__Title {
+                    background: url({{site.data.gospel[0].Featured_Image[0].url}}) no-repeat;
+                    background-size: cover;
+
+                }
+            </style>
+        {% else %}
+                <style>
+                    .aboutPage__Title {
+                        background: url({{site.default_about_image}}) no-repeat;
+                        background-size: cover;
+                    }
+                </style>
+        {% endif %}
+
+
+<div class="aboutPage">
+    <div class="aboutPage__Title">
+        <h1>{{site.data.gospel[0].Heading}}</h1>
+    </div><!--/aboutPage__Title-->
+    <div class="aboutPage__Content">
+       {{site.data.gospel[0].Content | markdownify }}
+    </div><!--/aboutPage__Content-->
+</div><!--/aboutPage-->
