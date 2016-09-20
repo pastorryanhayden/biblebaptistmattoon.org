@@ -207,7 +207,7 @@ var updated = false;
         maxRecords: 100,
       //sort
         filterByFormula: "AND(published, Future)",
-        sort: [{field: "DateTime", direction: "desc"}],
+        sort: [{field: "DateTime", direction: "asc"}],
       //Formula to how to get data
       // help https://support.airtable.com/hc/en-us/articles/203255215-Formula-Field-Reference
 
